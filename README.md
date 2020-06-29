@@ -23,5 +23,5 @@
 4. 输入`python3 checkInfo.py`
 
 ### 详细说明
-参见Chestnuta的<a href = "http://www.chestnuta.cn/article/2020/6/29/7.html" " target="_blank">网站</a>
+[参见Chestnuta的博客](http://www.chestnuta.cn/article/2020/6/29/7.html)
   
