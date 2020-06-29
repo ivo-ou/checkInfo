@@ -4,14 +4,31 @@
 # 示例：张三 31788888    则xuehao_startwith = 3 ；xuehao_len = 8
 
 import os, sys
-import time
-import xlrd
+try:
+    import time
+except ImportError:
+    print("正在安装time扩展")
+    res = os.system("pip3 install time >nul")
+    if res != 0:
+        print("time扩展安装失败")
+        sys.exit(1)
+    import time
+try:
+    import xlrd
+except ImportError:
+    print("正在安装xlrd扩展")
+    res = os.system("pip3 install xlrd >nul")
+    if res != 0:
+        print("xlrd扩展安装失败")
+        sys.exit(1)
+    import xlrd
+
 
 # 参数
-path = ""  # 作业路径
-pathHM = ""     # 花名册路径
-xuehao_startwith = ''  # 学号起始字母
-xuehao_len = ''  # 学号长度
+path = "./作业"  # 作业路径
+pathHM = "./花名册.xlsx"     # 花名册路径
+xuehao_startwith = '3'  # 学号起始字母
+xuehao_len = '8'  # 学号长度
 indexNAME = 0           # 姓名所在表格的列数（0-n）
 indexXH = 1           # 学号所在表格的列数（0-n）
 
