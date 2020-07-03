@@ -22,7 +22,9 @@
 3. 进入checkInfo.py目录 `cd path`
 4. 输入`python3 checkInfo.py`
 
-![](https://image.chestnuta.cn/img/截屏2020-06-30 上午12.30.15.png)
+<div>
+<img src="https://image.chestnuta.cn/img/截屏2020-06-30 上午12.30.15.png"></img>
+</div>
 
 ### 详细说明
 [参见Chestnuta的博客](http://www.chestnuta.cn/article/2020/6/29/7.html)
