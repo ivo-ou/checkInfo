@@ -93,6 +93,7 @@ def compare():
     xuehao, name, biaotou = readHM(pathHM, indexXH, indexNAME)
     react = []
     undo = []
+    unread = []
 
     # compare
     for num in range(len(xuehao)):
@@ -101,11 +102,20 @@ def compare():
         else:
             react.append(str(name[num]) + " " + str(xuehao[num]) + "  未完成")
             undo.append(str(name[num]) + " " + str(xuehao[num]) + "  未完成")
+    # 检查是否有花名册未收集的文件，或者命名不规范的文件
+    for num in range(len(data)):
+        if data[num] not in xuehao:
+            unread.append(data[num])
+
 
     printlist("作业完成情况统计", react)
     printlist("未完成情况", undo)
     print("截止至" + str(time.asctime(time.localtime(time.time()))) + "\n应提交作业数量：{}份 已提交作业数量:{}".format(str(len(react)), str(len(react) - len(undo))) + "份")
-
+    if len(unread) != 0:
+        print ( "----------------------" )
+        print("未识别文件，请手动处理")
+        for num in range(len(unread)):
+            print(unread[num])
 
 if __name__ == '__main__':
     print("\n作业比对脚本" + str(time.asctime(time.localtime(time.time()))))
