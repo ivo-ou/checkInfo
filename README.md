@@ -17,6 +17,7 @@
 `indexXH`：学号在花名册的索引表项  
 
 ### 使用方法  
+**<font size=5>checkInfo.py</font>**
 1. 修改6个参数
 2. 打开终端（MAC）命令行窗口（Windows）
 3. 进入checkInfo.py目录 `cd path`
@@ -24,7 +25,17 @@
 
 <div>
 <img src="https://image.chestnuta.cn/img/截屏2020-06-30 上午12.30.15.png"></img>
+</div>  
+  
+**<font size=5>checkInfo_CLI.py</font>**  
+1.打开终端（MAC）命令行窗口（Windows)  
+2.输入信息  
+<div>
+<img src="https://image.chestnuta.cn/img/截屏2020-07-10 下午3.54.31.png"/>
 </div>
+<div>
+ <img src="https://image.chestnuta.cn/img/截屏2020-07-10 下午3.55.03.png"/> 
+</div>  
 
 ### 详细说明
 [参见Chestnuta的博客](http://www.chestnuta.cn/article/2020/6/29/7.html)
